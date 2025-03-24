@@ -15,5 +15,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "nopparuj518" --password-stdin
-        docker image build -t nopparuj5182/docker:latest .
+        docker image build -t nopparuj518/docker:latest .
         docker push nopparuj518/docker:latest
